@@ -15,8 +15,4 @@ app.use(cors())
 
 app.use("/auth", routUser)
 
-
-const port = process.env.PORT || 4700
-app.listen(port, () => {
-    console.log(`scssful run server in PORT ${port}`)
-})
+module.exports = app
